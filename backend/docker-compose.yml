@@ -1,0 +1,12 @@
+
+version: "3"
+
+services:
+
+  webapp:
+    build: ./
+    image: app
+    ports:
+      - "5000:8000"
+    volumes:
+      - ./:/code
